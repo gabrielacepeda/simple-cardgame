@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <h1 class="add">PIZZA PALACE</h1>
+    <section class="left">
+
+        <img src="img/pepperoni-left.png" class="pepsLeft hidden" alt="">
+        <img src="img/mushrooms-left.png" class="shroomsLeft hidden"alt="">
+        <img src="img/olives-left.png" class="olivesLeft hidden"alt="">
+    </section>
+    <section class="right">
+
+      <img src="img/pepperoni-right.png" class="pepsRight hidden"alt="">
+      <img src="img/mushrooms-right.png" class="shroomsRight hidden"alt="">
+      <img src="img/olives-right.png" class="olivesRight hidden"alt="">
+    </section>
+
+    <form action="index.html" >
+      <h3>Choose your toppings!</h3>
+      <fieldset>
+        <legend>Ingredients - left/ whole/ right</legend>
+        <label for="" id="extra">Extra Cheese</label>
+        <input type="radio" name="cheese" class="cheeseLeft" value="">
+        <input type="radio" name="cheese" class="cheeseWhole" value="">
+        <input type="radio" name="cheese" class="cheeseRight" value="">
+        <label for="" id="pepper">Pepperoni</label>
+        <input type="radio" name="pepperoni" class="pepLeft" value="">
+        <input type="radio" name="pepperoni" class="pepWhole" value="">
+        <input type="radio" name="pepperoni" class="pepRight" value="">
+        <label for="" id="shroomies">Mushrooms</label>
+        <input type="radio" name="mushroom" class="shroomLeft" value="">
+        <input type="radio" name="mushroom" class="shroomWhole" value="">
+        <input type="radio" name="mushroom" class="shroomRight" value="">
+        <label for="" id="blackies">Black Olives</label>
+        <input type="radio" name="olives" class="oliveLeft" value="">
+        <input type="radio" name="olives" class="oliveWhole" value="">
+        <input type="radio" name="olives" class="oliveRight" value="">
+
+      </fieldset>
+    </form>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

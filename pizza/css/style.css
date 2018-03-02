@@ -1,0 +1,100 @@
+form{
+  clear: both;
+}
+h1{
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  text-align: center;
+  color: red;
+}
+h3{
+  font-family: 'Amatic SC', cursive;
+  color: red;
+  font-size: 30px;
+}
+.left{
+  height: 300px;
+  width: 150px;
+  border-radius: 150px 0 0 150px;
+  border: 1px solid black;
+  float: left;
+  margin-left: 10%;
+
+
+
+}
+.right{
+  height: 300px;
+  width: 150px;
+  border-radius: 0 150px 150px 0;
+  border: 1px solid black;
+  float: left;
+
+
+}
+.cheese{
+  background-color: #ffb300;
+}
+
+.hidden{
+  display: none;
+}
+.pepsLeft, .pepsRight{
+  float: left;
+
+
+
+}
+
+.pepsLeft{
+  margin: 0px 0px 0px -63px;
+  width: 398px;
+}
+.pepsRight{
+  width: 398px;
+  margin: 0 0 0 -125%;
+}
+
+.shroomsLeft, .shroomsRight{
+  float: left;
+
+
+
+}
+.shroomsLeft{
+margin: -334px 0px 0 -48%;
+width: 436px;
+}
+.shroomsRight{
+  width: 436px;
+  width: 398px;
+  margin: -334px 0 0 -127%;
+}
+
+.olivesLeft, .olivesRight{
+  float: left;
+
+}
+.olivesLeft{
+  width: 430px;
+  margin: -330px 0 0 -50%;
+}
+.olivesRight{
+  width: 430px;
+  margin: -330px 0 0 -140%;
+
+}
+
+#extra{
+  color: #ffd84d;
+}
+
+#pepper{
+  color: #b30f00;
+}
+#shroomies{
+  color: #737373;
+}
+#blackies{
+  color: #009900;
+}
