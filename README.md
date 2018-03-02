@@ -1,19 +1,18 @@
 # Harry Potter Memory Card Game
-This memory game allows a user to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. The game is done when all cards are matched and flipped over.
+This memory game allows a user to select two cards and check if they are a match until all cards are matched.
 
 ![memory game preview](https://github.com/gabrielacepeda/simple-cardgame/blob/master/cardgamephoto.png)
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** HTML, CSS, JavaScript, jQuery
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+For this project I used HTML, CSS, and jQuery. I created a simple game where a user can select two cards and check if they match. If they match, those cards clear from the pool. If not, they flip back over. The game is done when all cards are matched and flipped over.
+
 
 ## Optimizations
-*(optional)*
-
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+This game works, except for the shuffle button. On click, it will randomize the cards in the console, but it won't in the browser. I'm currently working on troubleshooting and refactoring this.
 
 ## Lessons Learned:
+  I learned there are different and more effective ways of creating this app. I chose to make an array for the cards, but I could've chosen not to and ended up with the same results and drier code.
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
