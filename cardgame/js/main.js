@@ -17,6 +17,7 @@ $(document).ready(function() {
       app.shuffle();
     },
 
+
 /*shuffle functioln*/
     shuffle: function() {
       var random = 0;
@@ -56,6 +57,7 @@ $(document).ready(function() {
       $('.card').on('click', function() {
         $(this).html('<p>' + $(this).data('cardValue') + '</p>').addClass('selected');
         app.checkMatch();
+        $(this).toggleClass('is-flipped');
       });
 
     },
@@ -64,17 +66,20 @@ $(document).ready(function() {
       if ($('.selected').length === 2) {
         if ($('.selected').first().data('cardValue') === $('.selected').last().data('cardValue')) {
           $('.selected').each(function() {
-            $(this).css("background", "#7ce6e6").animate({
+            $(this).toggleClass('is-flipped');
+            $(this).css("background", "#00cccc").animate({
               opacity: 0
             }).removeClass('unmatched');
           });
           $('.selected').each(function() {
+            $(this).toggleClass('is-flipped');
             $(this).removeClass('selected');
           });
           app.checkWin();
         } else {
           setTimeout(function() {
             $('.selected').each(function() {
+              $(this).toggleClass('is-flipped');
               $(this).html('').removeClass('selected');
             });
           }, 1000);

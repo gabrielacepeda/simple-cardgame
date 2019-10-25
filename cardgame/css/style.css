@@ -28,10 +28,12 @@
 /*******************************************/
 
 body {
-     color: #000;
+     color: #333;
+     background-color: #eee;
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
+     overflow-x: hidden;
 }
 
 
@@ -41,34 +43,21 @@ body {
 
 /* Center the container */
 #container {
-	width: 960px;
-	margin: auto;
+  padding: 0 50px;
 }
 
-.card {
-  float: left;
-  margin: 10px;
-  height: 200px;
-  width: 150px;
-  background: #e6e6e6;
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: 10px 10px 10px #bfbfbf;
-}
-
-.card:hover {
-  cursor: pointer;
-}
 
 .card p {
   font-size: 30px;
-  color: #ef6765;
+  color: #fff;
 }
 .win h1{
   font-size: 45px;
   text-align: center;
-  color: #ef6765;
+  color: #fff;
   font-family: 'Fjalla One', sans-serif;
+  padding: 15px;
+  background-color: #00cccc;
 }
 header h1{
   color: #00cccc;
@@ -78,10 +67,83 @@ header h1{
 h2{
   font-family: 'Fjalla One', sans-serif;
 }
+
 #shuffle{
-  color: #58cdcd;
+  color: #fff;
   font-size: 17px;
-  width: 10%;
-  height: 40px;
+  padding: 20px;
+  background-color: #58cdcd;
+  border: none;
+  border-radius: 15px;
   font-family: 'Fjalla One', sans-serif;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.3s;
+
+}
+
+#shuffle:hover {
+  background-color: #39BEBE;
+
+}
+
+.card {
+  flex: 1 0 17%; /* explanation below */
+  float: left;
+  margin: 10px;
+  height: 200px;
+  width: 150px;
+  background: #fff;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 6px 9px rgba(0,0,0,0.2);
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s, box-shadow 0.2s;
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 10px rgba(0,0,0,0.25);
+}
+
+.card.is-flipped {
+  transform: translateX(0%) rotateY(0deg);
+  background-color: #58cdcd;
+  box-shadow: 0px 8px 10px rgba(0,204,204,0.2);
+}
+
+.card.is-flipped:hover {
+  box-shadow: 0px 8px 10px rgba(0,204,204,0.2);
+}
+
+
+.card.is-flipped p {
+  color: #fff;
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.cards-wrapper {
+  width: 100%;
+  background-color: yellow;
+  position: relative;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
