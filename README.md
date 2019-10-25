@@ -1,7 +1,7 @@
 # Harry Potter Memory Card Game
 This memory game allows a user to select two cards and check if they are a match until all cards are matched.
 
-![memory game preview](https://github.com/gabrielacepeda/simple-cardgame/blob/master/cardgamephoto.png)
+![memory game preview](https://github.com/al-fin/simple-cardgame/blob/master/cardgamephoto.png)
 
 ## How It's Made:
 
